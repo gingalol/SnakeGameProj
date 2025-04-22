@@ -1,7 +1,12 @@
 import pygame, sys, random
 
-# Init
 pygame.init()
+pygame.mixer.init() 
+
+# Load and play background music
+pygame.mixer.music.load('Roku Snake OST - Main Theme.mp3')  
+pygame.mixer.music.play(-1) 
+
 WIDTH, HEIGHT, BLOCK = 720, 480, 10
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Snake Eater')
